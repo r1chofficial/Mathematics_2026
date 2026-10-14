@@ -26,7 +26,7 @@ BA=
 \end{pmatrix}
 $$
 
-**Result.** $AB\neq BA$ (already $8\neq2$ in position $(1,1)$).
+**Result.** $AB\neq BA$. Already the upper-left entries differ: $8\neq2$.
 
 **Explanation.** For numbers $ab=ba$, but for matrices this fails in general: $AB$ combines rows of $A$ with columns of $B$, while $BA$ combines rows of $B$ with columns of $A$. This is called noncommutativity, and it means the order of factors must always be kept.
 
