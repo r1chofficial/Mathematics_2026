@@ -46,7 +46,7 @@ that is $0=1$. No values of $x$ and $y$ can make this true, so the system is inc
 **Geometric meaning.** Both equations describe lines with slope $-\frac12$:
 
 $$
-y=\frac32-\frac12x,\qquad y=\frac72-\frac12x.
+y=\frac32-\frac12x,\qquad y=\frac74-\frac12x.
 $$
 
 The lines are parallel and different, so they have no common point.
