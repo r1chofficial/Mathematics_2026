@@ -1,19 +1,33 @@
-## Question
+# Exercise 6. Projection and Perpendicular Component
 
-Project $u=(4,2)$ onto $v=(1,1)$, compute the residual $r$, verify $r\cdot v=0$, and explain the result geometrically.
+## Problem
+
+Find the projection of $u=(4,2)$ onto the direction $v=(1,1)$. Then compute
+
+$$
+r=u-\mathrm{proj}_v\,u
+$$
+
+and verify that $r\cdot v=0$. Explain this result geometrically.
 
 ## Solution
 
-Using the projection formula,
+**Formula.** The projection of $u$ onto the direction of $v$ is
 
-$$\operatorname{proj}_v u=\frac{u\cdot v}{v\cdot v}v=\frac{6}{2}(1,1)=(3,3).$$
+$$
+\mathrm{proj}_v\,u=\frac{u\cdot v}{v\cdot v}\,v
+$$
 
-Thus
+**Computation.** $u\cdot v=4+2=6$ and $v\cdot v=1+1=2$, so
 
-$$r=u-\operatorname{proj}_v u=(4,2)-(3,3)=(1,-1),$$
+$$
+\mathrm{proj}_v\,u=\frac62\,(1,\ 1)=(3,\ 3),\qquad r=u-\mathrm{proj}_v\,u=(4,\ 2)-(3,\ 3)=(1,\ -1)
+$$
 
-and the requested calculation is
+**Verification.**
 
-$$r\cdot v=(1,-1)\cdot(1,1)=1-1=0.$$
+$$
+r\cdot v=1\cdot1+(-1)\cdot1=0,\qquad \mathrm{proj}_v\,u+r=(3,\ 3)+(1,\ -1)=(4,\ 2)=u
+$$
 
-The projection $(3,3)$ is parallel to $v$, so it is the component of $u$ in the projection direction. Subtracting this parallel component leaves the perpendicular component $r$. The zero dot product verifies geometrically that $r$ is perpendicular to the direction $v$.
+**Geometric meaning.** The vector $u$ is split into two parts: $(3,\ 3)$ along the line of $v$, and $r=(1,\ -1)$ perpendicular to it. The projection is like the shadow of $u$ on that line when light falls perpendicularly onto it. The remainder $r$ is the shortest path from the tip of $u$ to the line, and the shortest connection to a line is always perpendicular to it, which is why $r\cdot v=0$.
