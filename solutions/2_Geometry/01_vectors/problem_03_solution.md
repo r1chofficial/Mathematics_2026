@@ -1,19 +1,27 @@
-## Question
+# Exercise 3. Vector Normalization
 
-Normalize $v=(3,4)$, check the unit length, reconstruct $v$, and explain what normalization changes.
+## Problem
+
+For $v=(3,4)$ find a unit vector $e$ with the same direction and orientation. Check that $\lVert e\rVert=1$, reconstruct $v$ in the form $v=\lVert v\rVert e$, and explain what changes during normalization and what remains unchanged.
 
 ## Solution
 
-First, $\|v\|=\sqrt{3^2+4^2}=5$. Dividing by this positive length gives the unit vector
+**Length of v.**
 
-$$e=\frac{v}{\|v\|}=\left(\frac35,\frac45\right).$$
+$$
+\lVert v\rVert=\sqrt{3^2+4^2}=\sqrt{25}=5
+$$
 
-Indeed,
+**Unit vector.** Divide $v$ by its length:
 
-$$\|e\|=\sqrt{\frac9{25}+\frac{16}{25}}=1,$$
+$$
+e=\frac{v}{\lVert v\rVert}=\left(\frac35,\ \frac45\right)
+$$
 
-and reconstruction yields
+**Check.**
 
-$$\|v\|e=5\left(\frac35,\frac45\right)=(3,4)=v.$$
+$$
+\lVert e\rVert=\sqrt{\frac{9}{25}+\frac{16}{25}}=\sqrt{1}=1,\qquad \lVert v\rVert\,e=5\left(\frac35,\ \frac45\right)=(3,\ 4)=v
+$$
 
-Normalization changes the length to one while preserving the direction and orientation because division is by the positive scalar $5$.
+**What changes and what stays.** Only the length changes, from $5$ to $1$. Because we divide by a positive number, the direction and the orientation stay the same: $e$ points exactly where $v$ points. Dividing by a negative number would reverse the orientation.
